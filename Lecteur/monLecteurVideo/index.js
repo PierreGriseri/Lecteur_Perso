@@ -288,11 +288,6 @@ class MyVideoPlayer extends HTMLElement {
             }
         }
 
-        window.onkeydown = (e) => {
-            if(e.keyCode == 32) {
-                this.pause();
-            }
-        }
 
         this.shadowRoot.querySelector("#frequence0").oninput = (event) => {
             this.changeGain(event.target.value, 0);
