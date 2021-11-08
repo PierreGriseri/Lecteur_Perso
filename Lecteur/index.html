@@ -1,0 +1,66 @@
+<html lang="fr">
+
+<head>
+    <title>Mon premier web component</title>
+    <meta charset="utf-8">
+    <script src="./monLecteurVideo/index.js" type="module"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <my-player id="player" 
+               src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4">
+    </my-player>
+  
+    <!--
+    <video id="player" controls
+    src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4">
+        <br>
+    </video>
+    <button id="play" onclick="play()">PLAY</button>
+    <button id="pause" onclick="pause()">PAUSE</button>
+    <button onclick="getInfo()">GET INFO</button>
+    <button onclick="avance10s()">+10s</button>
+    <button onclick="vitesse4x()" >Vitesse 4x</button>
+
+
+    <script>
+        let player = document.querySelector("#player");
+
+        player.ontimeupdate = () => {
+            console.log("Temps courant = " + player.currentTime)
+        }
+
+        player.onended = () => {
+            console.log("video terminée");
+        }
+
+        function play() {
+            player.play();
+        }
+
+        function pause() {
+            player.pause();
+        }
+
+        function avance10s() {
+            player.currentTime += 10;
+        }
+
+        function vitesse4x() {
+            player.playbackRate = 4;
+        }
+
+        function getInfo() {
+            console.log("Durée de la vidéo : " + player.duration);
+            console.log("Temps courant : " + player.currentTime);
+        }
+    </script>
+    -->
+</body>
+
+</html>
